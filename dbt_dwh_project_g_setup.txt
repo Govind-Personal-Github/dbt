@@ -1,0 +1,17 @@
+created below mentioned snowflake account using govi_k73@yahoo.co.in on 12Oct2024
+https://fqfhmin-wc86851.snowflakecomputing.com/console/login.
+https://ot31046.west-us-2.azure.snowflakecomputing.com
+
+dbt_dwh_project_g:
+  outputs:
+    dev:
+      account: ot31046.west-us-2.azure
+      database: DEMO_DB
+      password: Snow12oct2024
+      role: ACCOUNTADMIN
+      schema: DBT_TRNG_SCHEMA
+      threads: 3
+      type: snowflake
+      user: GOVINDYAHOO12OCT2024
+      warehouse: COMPUTE_WH
+  target: dev
