@@ -1,3 +1,28 @@
+C:\G\dbt>python -m venv dbt-core
+C:\G\dbt\dbt-core\Scripts>activate
+(dbt-core) C:\G\dbt\dbt-core>pip install dbt-snowflake
+Python -m pip install –upgrade pip
+
+1. Install python latest version
+2. install Git
+3. Install MS Vishual studio code tool
+4. python.exe -m venv dbt-core
+        C:\Users\k.govindarasu\AppData\Local\Programs\Python\Python312\python.exe -m venv dbt-core
+5. Activate the virtual environment  
+        Dbt-core\Scripts\  >> Activate is available in script folder. 
+6. pip install dbt-snowflake
+7. dbt init  - initiate
+      use existing snowflake environment credentials
+8. dbt debug
+      if you got any errors
+
+Snowflake
+https://nsa50228.us-east-1.snowflakecomputing.com/console#/internal/worksheet
+MADHUM
+HCLsnow@123
+
+
+
 created below mentioned snowflake account using govi_k73@yahoo.co.in on 12Oct2024
 https://fqfhmin-wc86851.snowflakecomputing.com/console/login.
 https://ot31046.west-us-2.azure.snowflakecomputing.com
