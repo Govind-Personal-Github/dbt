@@ -18,8 +18,6 @@ Python -m pip install –upgrade pip
 
 Snowflake
 https://nsa50228.us-east-1.snowflakecomputing.com/console#/internal/worksheet
-MADHUM
-HCLsnow@123
 
 
 
