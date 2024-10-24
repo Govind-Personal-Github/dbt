@@ -40,3 +40,22 @@ dbt_dwh_project_g:
       user: GOVINDYAHOO12OCT2024
       warehouse: COMPUTE_WH
   target: dev
+
+
+dbt connection Name : g_snowflake_connection_for_dbt_trng
+dbt project name    : g_project_dbt_trng
+Repository name     : g_repo_dbt_trng
+
+g_project_dbt_trng:
+  outputs:
+    dev:
+      account: ot31046.west-us-2.azure
+      database: g_dbt_db
+      password: Snow12oct2024
+      role: accountadmin
+      schema: g_dbt_schema_wh
+      threads: 3
+      type: snowflake
+      user: GOVINDYAHOO12OCT2024
+      warehouse: g_dbt_wh
+  target: dev
