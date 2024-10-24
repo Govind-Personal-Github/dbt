@@ -45,7 +45,8 @@ dbt_dwh_project_g:
 dbt connection Name : g_snowflake_connection_for_dbt_trng
 dbt project name    : g_project_dbt_trng
 Repository name     : g_repo_dbt_trng
-
+Src schema          : g_dbt_schema_src
+wh schema           : g_dbt_schema_wh
 g_project_dbt_trng:
   outputs:
     dev:
