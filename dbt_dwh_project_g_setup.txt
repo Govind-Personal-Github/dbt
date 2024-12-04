@@ -1,3 +1,25 @@
+environment dev		: g_26nov2024_dev_env
+environment prd	 	: g_26nov2024_dev_prd
+
+dbt project name    : g_26nov2024_project
+dbt connection Name : g_26nov2024_snowflake
+Repository name     : g_26nov2024_repo
+Src schema          : g_dbt_schema_src
+
+g_project_dbt_trng:
+  outputs:
+    dev:
+      account: uza67202.east-us-2.azure
+      database: g_26nov2024_db
+      password: Snow@2024
+      role: accountadmin
+      schema: g_dbt_schema_wh
+      threads: 3
+      type: snowflake
+      user: kgovindarasu
+      warehouse: compute_wh
+target: dev
+
 C:\G\dbt>python -m venv dbt-core
 C:\G\dbt\dbt-core\Scripts>activate
 (dbt-core) C:\G\dbt\dbt-core>pip install dbt-snowflake
