@@ -6,17 +6,17 @@ dbt connection Name : g_26nov2024_snowflake
 Repository name     : g_26nov2024_repo
 Src schema          : g_dbt_schema_src
 
-g_project_dbt_trng:
+jun25_dbt:
   outputs:
     dev:
-      account: uza67202.east-us-2.azure
-      database: g_26nov2024_db
-      password: Snow@2024
+      account: QFVQGRB-LAC59079.snowflakecomputing.com
+      database: JUN25
+      password: MySnowflake@2025
       role: accountadmin
-      schema: g_dbt_schema_wh
+      schema: JUN25_SCHEMA
       threads: 3
       type: snowflake
-      user: kgovindarasu
+      user: kgovind
       warehouse: compute_wh
 target: dev
 
@@ -35,6 +35,9 @@ Python -m pip install –upgrade pip
         Dbt-core\Scripts\  >> Activate is available in script folder. 
         C:\G\dbt\dbt-core\Scripts\activate
 6. pip install dbt-snowflake
+    pip install dbt-bigquery
+     python -m pip install dbt-core dbt-bigquery
+  
 7. dbt init  - initiate
       use existing snowflake environment credentials
 8. dbt debug
